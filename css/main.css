@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height:20px;
+}
+
+#outputDiv{
+    width:100%;
+}
+
+#inputDiv{
+    width: 100%;
+    height: 80%;
+}
+
+.input, .output, .error, .log, .warn{
+    width: calc(100% - 20px);
+    padding-left:20px;
+}
+.input:before, .output:before, .error:before, .warn:before{
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+}
+
+.input:before{
+    content: ">";
+    color: #8C8C8C;
+}
+
+.output:before{
+    content: "<·";
+    color: #B4B4B4;
+}
+
+.error:before{
+    content: "⊕";
+    color: #D7313C;
+    font-size: 19px;
+    transform: rotate(45deg);
+}
+
+.warn:before{
+    content: "▲";
+    color: #E9B700;
+    font-size: 19px;
+}
+
+#input{
+    height:100%;
+    user-modify: read-write-plaintext-only;
+    -webkit-user-modify: read-write-plaintext-only;
+    user-focus: auto;
+    user-select: auto;
+}
+
+#input:before{
+    color: #4873F2;
+}
+
+#input:focus{
+    outline: none;
+}
+
+.error{
+    color:#EB000E;
+    background-color: #FCEEEE;
+}
+
+.errorArrow{
+    color:#656565;
+    font-size:14px;
+    vertical-align: top;
+}
+
+.warn{
+    background-color: #FEFBE1;
+}
