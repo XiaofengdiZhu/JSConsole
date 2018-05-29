@@ -1,2 +1,3 @@
-# guid_duplicate_checking
-A small tool for Survivalcraft mod builders to check out duplicate guids
+# JSConsole
+A JSConsole made by myself . I didn't know the famous one until I finished and named it……
+Well, it's not important. At least I learned something from developing this small tool.
